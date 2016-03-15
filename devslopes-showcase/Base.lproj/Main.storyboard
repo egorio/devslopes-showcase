@@ -1,27 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7EU-JL-Ra6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+            <string>NotoSans</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="b4o-FD-gJp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devslopes_showcase" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="7EU-JL-Ra6" customClass="ViewController" customModule="devslopes_showcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2CC-th-I7f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1o3-1E-WxE" userLabel="Top Background">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAS-lW-yfJ">
+                                        <rect key="frame" x="20" y="30" width="137" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="0gb-Ae-aM2"/>
+                                    <constraint firstItem="fAS-lW-yfJ" firstAttribute="top" secondItem="1o3-1E-WxE" secondAttribute="top" constant="30" id="60g-bs-OUe"/>
+                                    <constraint firstItem="fAS-lW-yfJ" firstAttribute="leading" secondItem="1o3-1E-WxE" secondAttribute="leading" constant="20" id="hhQ-bw-633"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAB-SF-pQj" customClass="MaterialView" customModule="devslopes_showcase" customModuleProvider="target">
+                                <rect key="frame" x="20" y="70" width="335" height="73"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKT-D3-poB" customClass="MaterialButton" customModule="devslopes_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="295" height="33"/>
+                                        <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Login with Facebook">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QKT-D3-poB" firstAttribute="leading" secondItem="HAB-SF-pQj" secondAttribute="leading" constant="20" id="5qh-sz-gRS"/>
+                                    <constraint firstAttribute="trailing" secondItem="QKT-D3-poB" secondAttribute="trailing" constant="20" id="6UD-hD-bIx"/>
+                                    <constraint firstItem="QKT-D3-poB" firstAttribute="top" secondItem="HAB-SF-pQj" secondAttribute="top" constant="20" id="F59-g1-qNf"/>
+                                    <constraint firstAttribute="bottom" secondItem="QKT-D3-poB" secondAttribute="bottom" constant="20" id="Uw5-wl-RMc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2N-ix-LYS" customClass="MaterialView" customModule="devslopes_showcase" customModuleProvider="target">
+                                <rect key="frame" x="20" y="163" width="335" height="153"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPR-U3-geC" customClass="MaterialTextField" customModule="devslopes_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="295" height="20"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dl-YB-fct" customClass="MaterialTextField" customModule="devslopes_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="60" width="295" height="20"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhC-fZ-FiT" customClass="MaterialButton" customModule="devslopes_showcase" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="100" width="295" height="33"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="15"/>
+                                        <state key="normal" title="Login or Register with Email">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8dl-YB-fct" firstAttribute="top" secondItem="OPR-U3-geC" secondAttribute="bottom" constant="20" id="5kV-4c-Upk"/>
+                                    <constraint firstItem="QhC-fZ-FiT" firstAttribute="leading" secondItem="B2N-ix-LYS" secondAttribute="leading" constant="20" id="HGX-AX-ebf"/>
+                                    <constraint firstItem="OPR-U3-geC" firstAttribute="top" secondItem="B2N-ix-LYS" secondAttribute="top" constant="20" id="Mn4-Db-T5M"/>
+                                    <constraint firstAttribute="trailing" secondItem="QhC-fZ-FiT" secondAttribute="trailing" constant="20" id="Rx8-Ab-y9J"/>
+                                    <constraint firstAttribute="trailing" secondItem="OPR-U3-geC" secondAttribute="trailing" constant="20" id="af2-r7-5Xm"/>
+                                    <constraint firstItem="QhC-fZ-FiT" firstAttribute="top" secondItem="8dl-YB-fct" secondAttribute="bottom" constant="20" id="b9S-qG-ifv"/>
+                                    <constraint firstItem="8dl-YB-fct" firstAttribute="leading" secondItem="B2N-ix-LYS" secondAttribute="leading" constant="20" id="htl-dB-icP"/>
+                                    <constraint firstAttribute="bottom" secondItem="QhC-fZ-FiT" secondAttribute="bottom" constant="20" id="iiN-HL-eKb"/>
+                                    <constraint firstItem="OPR-U3-geC" firstAttribute="leading" secondItem="B2N-ix-LYS" secondAttribute="leading" constant="20" id="ktN-S6-yZG"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dl-YB-fct" secondAttribute="trailing" constant="20" id="mIC-bv-Ph4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuk-v4-3eb">
+                                <rect key="frame" x="20" y="336" width="335" height="311"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Showcase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-2l-RIS">
+                                        <rect key="frame" x="78.5" y="144" width="178" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xeg-2l-RIS" firstAttribute="centerX" secondItem="xuk-v4-3eb" secondAttribute="centerX" id="r3o-0p-oHA"/>
+                                    <constraint firstItem="Xeg-2l-RIS" firstAttribute="centerY" secondItem="xuk-v4-3eb" secondAttribute="centerY" id="zZr-S6-135"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1o3-1E-WxE" firstAttribute="top" secondItem="2CC-th-I7f" secondAttribute="top" id="3hb-2i-peu"/>
+                            <constraint firstItem="HAB-SF-pQj" firstAttribute="leading" secondItem="2CC-th-I7f" secondAttribute="leading" constant="20" id="6Qh-Gh-gsB"/>
+                            <constraint firstAttribute="trailing" secondItem="HAB-SF-pQj" secondAttribute="trailing" constant="20" id="KBO-9Q-v9J"/>
+                            <constraint firstItem="xuk-v4-3eb" firstAttribute="leading" secondItem="2CC-th-I7f" secondAttribute="leading" constant="20" id="NmD-7Z-pMf"/>
+                            <constraint firstItem="B2N-ix-LYS" firstAttribute="leading" secondItem="2CC-th-I7f" secondAttribute="leading" constant="20" id="OHx-G0-RQh"/>
+                            <constraint firstAttribute="trailing" secondItem="xuk-v4-3eb" secondAttribute="trailing" constant="20" id="WVA-Ai-qSe"/>
+                            <constraint firstItem="xuk-v4-3eb" firstAttribute="top" secondItem="B2N-ix-LYS" secondAttribute="bottom" constant="20" id="Y6q-oo-YD1"/>
+                            <constraint firstItem="B2N-ix-LYS" firstAttribute="top" secondItem="HAB-SF-pQj" secondAttribute="bottom" constant="20" id="Yu1-QB-iJa"/>
+                            <constraint firstItem="HAB-SF-pQj" firstAttribute="top" secondItem="2CC-th-I7f" secondAttribute="top" constant="70" id="nTn-4Y-kAg"/>
+                            <constraint firstAttribute="bottom" secondItem="xuk-v4-3eb" secondAttribute="bottom" constant="20" id="oGe-1P-gcN"/>
+                            <constraint firstAttribute="trailing" secondItem="1o3-1E-WxE" secondAttribute="trailing" id="prl-N1-M19"/>
+                            <constraint firstAttribute="trailing" secondItem="B2N-ix-LYS" secondAttribute="trailing" constant="20" id="rQ9-AL-7aZ"/>
+                            <constraint firstItem="1o3-1E-WxE" firstAttribute="leading" secondItem="2CC-th-I7f" secondAttribute="leading" id="vcA-3M-EO2"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd2-J0-uku" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-28.5" y="191.5"/>
         </scene>
     </scenes>
 </document>
