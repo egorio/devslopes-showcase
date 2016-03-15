@@ -12,6 +12,13 @@
 		E81A683A1C97805600E663EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A68381C97805600E663EA /* Main.storyboard */; };
 		E81A683C1C97805600E663EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81A683B1C97805600E663EA /* Assets.xcassets */; };
 		E81A683F1C97805600E663EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A683D1C97805600E663EA /* LaunchScreen.storyboard */; };
+		E81A68521C9787DB00E663EA /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A684E1C9787DB00E663EA /* NotoSans-Bold.ttf */; };
+		E81A68531C9787DB00E663EA /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A684F1C9787DB00E663EA /* NotoSans-BoldItalic.ttf */; };
+		E81A68541C9787DB00E663EA /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A68501C9787DB00E663EA /* NotoSans-Italic.ttf */; };
+		E81A68551C9787DB00E663EA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A68511C9787DB00E663EA /* NotoSans-Regular.ttf */; };
+		E81A685D1C978B3500E663EA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E81A685B1C978B3500E663EA /* LICENSE */; };
+		E81A685E1C978B3500E663EA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E81A685C1C978B3500E663EA /* README.md */; };
+		E81A68611C978B8200E663EA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E81A68601C978B8200E663EA /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		E81A683B1C97805600E663EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81A683E1C97805600E663EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E81A68401C97805600E663EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81A684E1C9787DB00E663EA /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		E81A684F1C9787DB00E663EA /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E81A68501C9787DB00E663EA /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		E81A68511C9787DB00E663EA /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		E81A685B1C978B3500E663EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E81A685C1C978B3500E663EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E81A68601C978B8200E663EA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,9 @@
 			children = (
 				E81A68331C97805600E663EA /* devslopes-showcase */,
 				E81A68321C97805600E663EA /* Products */,
+				E81A68601C978B8200E663EA /* .gitignore */,
+				E81A685C1C978B3500E663EA /* README.md */,
+				E81A685B1C978B3500E663EA /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,49 @@
 			isa = PBXGroup;
 			children = (
 				E81A68341C97805600E663EA /* AppDelegate.swift */,
-				E81A68361C97805600E663EA /* ViewController.swift */,
-				E81A68381C97805600E663EA /* Main.storyboard */,
-				E81A683B1C97805600E663EA /* Assets.xcassets */,
 				E81A683D1C97805600E663EA /* LaunchScreen.storyboard */,
+				E81A68381C97805600E663EA /* Main.storyboard */,
+				E81A68481C97872200E663EA /* Controllers */,
+				E81A68491C97872D00E663EA /* Models */,
+				E81A684A1C97873300E663EA /* Views */,
+				E81A684B1C97875800E663EA /* Resources */,
+				E81A683B1C97805600E663EA /* Assets.xcassets */,
 				E81A68401C97805600E663EA /* Info.plist */,
 			);
 			path = "devslopes-showcase";
+			sourceTree = "<group>";
+		};
+		E81A68481C97872200E663EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E81A68361C97805600E663EA /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E81A68491C97872D00E663EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E81A684A1C97873300E663EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E81A684B1C97875800E663EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E81A684E1C9787DB00E663EA /* NotoSans-Bold.ttf */,
+				E81A684F1C9787DB00E663EA /* NotoSans-BoldItalic.ttf */,
+				E81A68501C9787DB00E663EA /* NotoSans-Italic.ttf */,
+				E81A68511C9787DB00E663EA /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81A683F1C97805600E663EA /* LaunchScreen.storyboard in Resources */,
-				E81A683C1C97805600E663EA /* Assets.xcassets in Resources */,
 				E81A683A1C97805600E663EA /* Main.storyboard in Resources */,
+				E81A685D1C978B3500E663EA /* LICENSE in Resources */,
+				E81A68521C9787DB00E663EA /* NotoSans-Bold.ttf in Resources */,
+				E81A68531C9787DB00E663EA /* NotoSans-BoldItalic.ttf in Resources */,
+				E81A68541C9787DB00E663EA /* NotoSans-Italic.ttf in Resources */,
+				E81A68551C9787DB00E663EA /* NotoSans-Regular.ttf in Resources */,
+				E81A68611C978B8200E663EA /* .gitignore in Resources */,
+				E81A683C1C97805600E663EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81A685E1C978B3500E663EA /* README.md in Sources */,
 				E81A68371C97805600E663EA /* ViewController.swift in Sources */,
 				E81A68351C97805600E663EA /* AppDelegate.swift in Sources */,
 			);
@@ -249,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "devslopes-showcase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egorio.devslopes-showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "devslopes-showcase/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egorio.devslopes-showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
