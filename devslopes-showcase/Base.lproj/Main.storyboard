@@ -15,10 +15,14 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="b4o-FD-gJp">
             <objects>
-                <viewController id="7EU-JL-Ra6" customClass="ViewController" customModule="devslopes_showcase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7EU-JL-Ra6" customClass="LoginViewController" customModule="devslopes_showcase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fev-cw-WXy"/>
+                        <viewControllerLayoutGuide type="bottom" id="9OC-qA-XXm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2CC-th-I7f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
