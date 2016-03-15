@@ -21,6 +21,7 @@
 		E81A69171C989EEE00E663EA /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69131C989EEE00E663EA /* NotoSans-Italic.ttf */; };
 		E81A69181C989EEE00E663EA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69141C989EEE00E663EA /* NotoSans-Regular.ttf */; };
 		E81A695B1C98A11600E663EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A695A1C98A11600E663EA /* LoginViewController.swift */; };
+		E81A69D51C98AE6000E663EA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A69D41C98AE6000E663EA /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E81A69131C989EEE00E663EA /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Italic.ttf"; path = "Resources/NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		E81A69141C989EEE00E663EA /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "Resources/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		E81A695A1C98A11600E663EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		E81A69D41C98AE6000E663EA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Services/DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				E81A68481C97872200E663EA /* Controllers */,
 				E81A68491C97872D00E663EA /* Models */,
 				E81A684A1C97873300E663EA /* Views */,
+				E81A697C1C98AD2600E663EA /* Services */,
 				E81A68671C98759300E663EA /* Utiils */,
 				E81A684B1C97875800E663EA /* Resources */,
 				E81A683B1C97805600E663EA /* Assets.xcassets */,
@@ -156,6 +159,14 @@
 				E81A690D1C989EE400E663EA /* Constants.swift */,
 			);
 			name = Utiils;
+			sourceTree = "<group>";
+		};
+		E81A697C1C98AD2600E663EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E81A69D41C98AE6000E663EA /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81A695B1C98A11600E663EA /* LoginViewController.swift in Sources */,
+				E81A69D51C98AE6000E663EA /* DataService.swift in Sources */,
 				E81A68701C98805100E663EA /* MaterialButton.swift in Sources */,
 				E81A68651C98753700E663EA /* MaterialView.swift in Sources */,
 				E81A68741C98828C00E663EA /* MaterialTextField.swift in Sources */,

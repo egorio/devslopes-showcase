@@ -20,3 +20,12 @@ struct Theme {
     static let textFieldBorderColor: CGColor = UIColor(red: 157 / 255, green: 157 / 255, blue: 157 / 255, alpha: 0.1).CGColor
     static let textFielsBorderWidth: CGFloat = 1.0
 }
+
+struct Auth {
+    static let userKey: String = "uid"
+    static let firebaseErrorAccountNoExist = -8
+}
+
+struct Identifier {
+    static let segueLoggedIn: String = "LoggedIn"
+}
