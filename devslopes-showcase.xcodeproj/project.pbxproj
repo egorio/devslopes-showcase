@@ -15,12 +15,12 @@
 		E81A68651C98753700E663EA /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A68641C98753700E663EA /* MaterialView.swift */; };
 		E81A68701C98805100E663EA /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A686F1C98805100E663EA /* MaterialButton.swift */; };
 		E81A68741C98828C00E663EA /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A68731C98828C00E663EA /* MaterialTextField.swift */; };
-		E81A69091C989EBE00E663EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A69081C989EBE00E663EA /* LoginViewController.swift */; };
 		E81A690E1C989EE400E663EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A690D1C989EE400E663EA /* Constants.swift */; };
 		E81A69151C989EEE00E663EA /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69111C989EEE00E663EA /* NotoSans-Bold.ttf */; };
 		E81A69161C989EEE00E663EA /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69121C989EEE00E663EA /* NotoSans-BoldItalic.ttf */; };
 		E81A69171C989EEE00E663EA /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69131C989EEE00E663EA /* NotoSans-Italic.ttf */; };
 		E81A69181C989EEE00E663EA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69141C989EEE00E663EA /* NotoSans-Regular.ttf */; };
+		E81A695B1C98A11600E663EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A695A1C98A11600E663EA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,12 +39,12 @@
 		E81A68641C98753700E663EA /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialView.swift; path = Views/MaterialView.swift; sourceTree = "<group>"; };
 		E81A686F1C98805100E663EA /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialButton.swift; path = Views/MaterialButton.swift; sourceTree = "<group>"; };
 		E81A68731C98828C00E663EA /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialTextField.swift; path = Views/MaterialTextField.swift; sourceTree = "<group>"; };
-		E81A69081C989EBE00E663EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		E81A690D1C989EE400E663EA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
 		E81A69111C989EEE00E663EA /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Bold.ttf"; path = "Resources/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		E81A69121C989EEE00E663EA /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-BoldItalic.ttf"; path = "Resources/NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		E81A69131C989EEE00E663EA /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Italic.ttf"; path = "Resources/NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		E81A69141C989EEE00E663EA /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "Resources/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		E81A695A1C98A11600E663EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 		E81A68481C97872200E663EA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E81A69081C989EBE00E663EA /* LoginViewController.swift */,
+				E81A695A1C98A11600E663EA /* LoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81A69091C989EBE00E663EA /* LoginViewController.swift in Sources */,
+				E81A695B1C98A11600E663EA /* LoginViewController.swift in Sources */,
 				E81A68701C98805100E663EA /* MaterialButton.swift in Sources */,
 				E81A68651C98753700E663EA /* MaterialView.swift in Sources */,
 				E81A68741C98828C00E663EA /* MaterialTextField.swift in Sources */,

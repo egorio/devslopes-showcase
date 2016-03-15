@@ -54,6 +54,9 @@
                                         <state key="normal" title="Login with Facebook">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="authWithFacebook:" destination="7EU-JL-Ra6" eventType="touchUpInside" id="OxU-nK-Rve"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
