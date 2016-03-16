@@ -43,11 +43,11 @@ class LoginViewController: UIViewController {
                     return print("Login failed. \(error)")
                 }
 
+                let user = ["provider": authData.provider!]
+                DataService.instance.createUser(authData.uid, user: user)
+
                 NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: Auth.userKey)
-
                 self.performSegueWithIdentifier(Identifier.segueLoggedIn, sender: nil)
-
-                print("Logged in! \(authData)")
             })
         }
     }
@@ -71,14 +71,22 @@ class LoginViewController: UIViewController {
                         }
 
                         // Login as just created user
-                        DataService.instance.firebase.authUser(email, password: password, withCompletionBlock: nil)
+                        DataService.instance.firebase.authUser(email, password: password, withCompletionBlock: { (error, authData) in
+                            guard error == nil else {
+                                return print("Login failed. \(error)")
+                            }
 
-                        NSUserDefaults.standardUserDefaults().setValue(result["uid"], forKey: Auth.userKey)
-                        self.performSegueWithIdentifier(Identifier.segueLoggedIn, sender: nil)
+                            let user = ["provider": authData.provider!]
+                            DataService.instance.createUser(authData.uid, user: user)
+
+                            NSUserDefaults.standardUserDefaults().setValue(result["uid"], forKey: Auth.userKey)
+                            self.performSegueWithIdentifier(Identifier.segueLoggedIn, sender: nil)
+                        })
                     })
                 }
-
-                return self.showErrorAlert("Email or Password incorrect", message: "Please check your Email and Password")
+                else {
+                    return self.showErrorAlert("Email or Password incorrect", message: "Please check your Email and Password")
+                }
             }
             else {
                 // Login succesfull

@@ -10,7 +10,6 @@
 		8426EB58FB9A2C1C2AC644F7 /* Pods_devslopes_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E9FC78458315633AD4FEBF /* Pods_devslopes_showcase.framework */; };
 		E81A68351C97805600E663EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A68341C97805600E663EA /* AppDelegate.swift */; };
 		E81A683A1C97805600E663EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A68381C97805600E663EA /* Main.storyboard */; };
-		E81A683C1C97805600E663EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81A683B1C97805600E663EA /* Assets.xcassets */; };
 		E81A683F1C97805600E663EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81A683D1C97805600E663EA /* LaunchScreen.storyboard */; };
 		E81A68651C98753700E663EA /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A68641C98753700E663EA /* MaterialView.swift */; };
 		E81A68701C98805100E663EA /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A686F1C98805100E663EA /* MaterialButton.swift */; };
@@ -22,6 +21,9 @@
 		E81A69181C989EEE00E663EA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81A69141C989EEE00E663EA /* NotoSans-Regular.ttf */; };
 		E81A695B1C98A11600E663EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A695A1C98A11600E663EA /* LoginViewController.swift */; };
 		E81A69D51C98AE6000E663EA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A69D41C98AE6000E663EA /* DataService.swift */; };
+		E81A6AD61C98CE3C00E663EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81A6AD51C98CE3C00E663EA /* Assets.xcassets */; };
+		E81A6B5D1C98D2DB00E663EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A6B5C1C98D2DB00E663EA /* FeedViewController.swift */; };
+		E81A6B9A1C98D5BB00E663EA /* FeedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A6B991C98D5BB00E663EA /* FeedTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,6 @@
 		E81A68311C97805600E663EA /* devslopes-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81A68341C97805600E663EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E81A68391C97805600E663EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E81A683B1C97805600E663EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81A683E1C97805600E663EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E81A68401C97805600E663EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E81A685B1C978B3500E663EA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		E81A69141C989EEE00E663EA /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "Resources/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		E81A695A1C98A11600E663EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		E81A69D41C98AE6000E663EA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Services/DataService.swift; sourceTree = "<group>"; };
+		E81A6AD51C98CE3C00E663EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81A6B5C1C98D2DB00E663EA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controllers/FeedViewController.swift; sourceTree = "<group>"; };
+		E81A6B991C98D5BB00E663EA /* FeedTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableCell.swift; path = Views/FeedTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +115,8 @@
 				E81A697C1C98AD2600E663EA /* Services */,
 				E81A68671C98759300E663EA /* Utiils */,
 				E81A684B1C97875800E663EA /* Resources */,
-				E81A683B1C97805600E663EA /* Assets.xcassets */,
 				E81A68401C97805600E663EA /* Info.plist */,
+				E81A6AD51C98CE3C00E663EA /* Assets.xcassets */,
 			);
 			path = "devslopes-showcase";
 			sourceTree = "<group>";
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E81A695A1C98A11600E663EA /* LoginViewController.swift */,
+				E81A6B5C1C98D2DB00E663EA /* FeedViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				E81A68641C98753700E663EA /* MaterialView.swift */,
 				E81A686F1C98805100E663EA /* MaterialButton.swift */,
 				E81A68731C98828C00E663EA /* MaterialTextField.swift */,
+				E81A6B991C98D5BB00E663EA /* FeedTableCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -235,8 +241,8 @@
 				E81A683F1C97805600E663EA /* LaunchScreen.storyboard in Resources */,
 				E81A69161C989EEE00E663EA /* NotoSans-BoldItalic.ttf in Resources */,
 				E81A69171C989EEE00E663EA /* NotoSans-Italic.ttf in Resources */,
+				E81A6AD61C98CE3C00E663EA /* Assets.xcassets in Resources */,
 				E81A683A1C97805600E663EA /* Main.storyboard in Resources */,
-				E81A683C1C97805600E663EA /* Assets.xcassets in Resources */,
 				E81A69181C989EEE00E663EA /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,8 +306,10 @@
 				E81A69D51C98AE6000E663EA /* DataService.swift in Sources */,
 				E81A68701C98805100E663EA /* MaterialButton.swift in Sources */,
 				E81A68651C98753700E663EA /* MaterialView.swift in Sources */,
+				E81A6B9A1C98D5BB00E663EA /* FeedTableCell.swift in Sources */,
 				E81A68741C98828C00E663EA /* MaterialTextField.swift in Sources */,
 				E81A68351C97805600E663EA /* AppDelegate.swift in Sources */,
+				E81A6B5D1C98D2DB00E663EA /* FeedViewController.swift in Sources */,
 				E81A690E1C989EE400E663EA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "devslopes-showcase/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egorio.devslopes-showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "devslopes-showcase/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egorio.devslopes-showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";

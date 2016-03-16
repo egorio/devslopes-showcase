@@ -28,4 +28,6 @@ struct Auth {
 
 struct Identifier {
     static let segueLoggedIn: String = "LoggedIn"
+    
+    static let cellFeed: String = "FeedCell"
 }
