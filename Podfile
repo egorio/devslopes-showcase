@@ -7,5 +7,6 @@ target 'devslopes-showcase' do
 	pod 'FBSDKLoginKit'
 	pod 'Firebase'
 	pod 'FDStackView', '1.0'
+	pod 'Alamofire', '~> 3.0'
 end
 

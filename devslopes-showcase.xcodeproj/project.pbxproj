@@ -24,6 +24,8 @@
 		E81A6AD61C98CE3C00E663EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81A6AD51C98CE3C00E663EA /* Assets.xcassets */; };
 		E81A6B5D1C98D2DB00E663EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A6B5C1C98D2DB00E663EA /* FeedViewController.swift */; };
 		E81A6B9A1C98D5BB00E663EA /* FeedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A6B991C98D5BB00E663EA /* FeedTableCell.swift */; };
+		E81A6D641C99E2EB00E663EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A6D631C99E2EB00E663EA /* Post.swift */; };
+		E81A708E1C9A0D1700E663EA /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A708D1C9A0D1700E663EA /* MemoryCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		E81A6AD51C98CE3C00E663EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81A6B5C1C98D2DB00E663EA /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Controllers/FeedViewController.swift; sourceTree = "<group>"; };
 		E81A6B991C98D5BB00E663EA /* FeedTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableCell.swift; path = Views/FeedTableCell.swift; sourceTree = "<group>"; };
+		E81A6D631C99E2EB00E663EA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
+		E81A708D1C9A0D1700E663EA /* MemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryCache.swift; path = Utils/MemoryCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 		E81A68491C97872D00E663EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E81A6D631C99E2EB00E663EA /* Post.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E81A690D1C989EE400E663EA /* Constants.swift */,
+				E81A708D1C9A0D1700E663EA /* MemoryCache.swift */,
 			);
 			name = Utiils;
 			sourceTree = "<group>";
@@ -306,11 +312,13 @@
 				E81A69D51C98AE6000E663EA /* DataService.swift in Sources */,
 				E81A68701C98805100E663EA /* MaterialButton.swift in Sources */,
 				E81A68651C98753700E663EA /* MaterialView.swift in Sources */,
+				E81A708E1C9A0D1700E663EA /* MemoryCache.swift in Sources */,
 				E81A6B9A1C98D5BB00E663EA /* FeedTableCell.swift in Sources */,
 				E81A68741C98828C00E663EA /* MaterialTextField.swift in Sources */,
 				E81A68351C97805600E663EA /* AppDelegate.swift in Sources */,
 				E81A6B5D1C98D2DB00E663EA /* FeedViewController.swift in Sources */,
 				E81A690E1C989EE400E663EA /* Constants.swift in Sources */,
+				E81A6D641C99E2EB00E663EA /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
