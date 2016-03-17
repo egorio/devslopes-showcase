@@ -9,13 +9,16 @@
 import Foundation
 
 class Post {
+    private var _id: String!
     private var _desc: String!
     private var _imageUrl: String?
     private var _likes: Int!
     private var _username: String!
-
-    private var _id: String!
-
+    
+    var id: String {
+        return _id
+    }
+    
     var desc: String {
         return _desc
     }

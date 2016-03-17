@@ -19,16 +19,25 @@ class DataService {
     var firebase: Firebase {
         return _firebase
     }
-    
+
     var users: Firebase {
         return _users
     }
-    
+
     var posts: Firebase {
         return _posts
     }
     
-    func createUser(id: String, user: [String:String]) {
+    var currentUser: Firebase {
+        let id = NSUserDefaults.standardUserDefaults().valueForKey(Auth.userKey) as! String
+        return Firebase(url: "\(_users)").childByAppendingPath(id)!
+    }
+
+    func createUser(id: String, user: [String: String]) {
         users.childByAppendingPath(id).setValue(user)
+    }
+
+    func createPost(post: [String: AnyObject]) {
+        posts.childByAutoId().setValue(post)
     }
 }
